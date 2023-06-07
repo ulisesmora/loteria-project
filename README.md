@@ -36,7 +36,9 @@ $ npm install
 
 You need execute mysql in docker the actual version is 8.0.3 I work with this mysql version 
 
-create database "loteria"
+create database "loteria" in mysql 
+
+the limit of draws is based on a principle of combinations without repetition of probability and statistics to get the limit of possible combinations
 
 and configure the database with the next configuration 
 
