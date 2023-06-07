@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "7a10851c-6de9-4875-a5fa-394bbcd64a3f",
+		"name": "Loteria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10919174"
+	},
+	"item": [
+		{
+			"name": "CreateCard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"ElDiablito\",\n    \"image\":\"https://i.etsystatic.com/25119114/r/il/e5f26d/2755526807/il_fullxfull.2755526807_f5r8.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/single-card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"single-card"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCards",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/single-card/createAllCards",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"single-card",
+						"createAllCards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/single-card",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"single-card"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/table?limit=22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"table"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "22"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
