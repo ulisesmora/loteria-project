@@ -34,6 +34,24 @@ $ npm install
 
 ## Running the app
 
+You need execute mysql in docker the actual version is 8.0.3 I work with this mysql version 
+
+create database "loteria"
+
+and configure the database with the next configuration 
+
+  host: 'localhost',
+  port: 3306,
+  username: 'root',
+  password: 'password',
+  database: 'loteria',
+  
+  I add a postman collection in the next location src/postmanCollection 
+  
+  please execute first the next endpoint to full the 54 cards  "single-card/createAllCards"
+  
+  next you can generate tables with the next endpoint /table?limit=22 the limit works to given the number of tables that you need 
+
 ```bash
 # development
 $ npm run start
@@ -44,6 +62,10 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## License
+
+I need more time to make a better solution like use a clean architecture, make unit test, use redis for caching, use .env variables, and the most important point try to finish and search the best way to relationship the table single-card -> tables, I think that this solution helps to have a better performance. 
 
 ## Test
 
