@@ -34,6 +34,8 @@ $ npm install
 
 ## Running the app
 
+Node version 18.13.0
+
 You need execute mysql in docker the actual version is 8.0.3 I work with this mysql version 
 
 create database "loteria" in mysql 
