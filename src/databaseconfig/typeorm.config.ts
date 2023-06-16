@@ -4,7 +4,7 @@ import { Table } from 'src/table/table.entity';
 
 export const typeOrmConfig: TypeOrmModuleOptions = {
   type: 'mysql',
-  host: 'localhost',
+  host: 'host.docker.internal',
   port: 3306,
   username: 'root',
   password: 'password',
